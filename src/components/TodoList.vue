@@ -101,9 +101,6 @@
             .then(()=> {
                 this.tasks = JSON.parse(JSON.stringify(this.$store.getters['taskList/getTasks']))
             })
-            .then(()=> {
-              this.tasks = JSON.parse(JSON.stringify(this.$store.getters['taskList/getTasks']))
-              })
             .catch((err)=> {
               console.log('err',err)
             })
